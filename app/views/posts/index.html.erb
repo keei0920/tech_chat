@@ -1,0 +1,28 @@
+<div class ="post-contents">
+  <% @posts.each do |post| %>
+  <div class="post-wrapper">
+
+    <div class="comment-content">
+      <div class="comment-counter">0</div>
+      <p class="comments">comments</p>
+    </div>
+
+    <div class="post-content" >
+      <div class="post-header">
+        <div class="post-title">
+        タイトル：<%= post.title %>
+        </div>
+        <div class="post-user">
+          投稿者名：<%= post.name%>
+        </div>
+      </div>
+      <div class="post-text">
+        内容：<%= post.text%>
+      </div><br>
+    </div>
+
+  </div>
+ <% end %>
+</div>
+
+<%# 次は一覧画面のメインの装飾から %>

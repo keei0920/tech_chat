@@ -1,0 +1,14 @@
+<div class="question-header"></div>
+  <div class="question-wrapper">
+    <div class="question-box">
+      <%= form_with model: @post,local: true do |form| %>
+        <%= form.text_field :title, placeholder: 'タイトル', class: :question_title %><br>
+        <%= form.text_area :text,  placeholder: '質問内容', class: :question_text %><br>
+        <%= form.text_field :name, placeholder: '投稿者名', class: :question_user %><br>
+
+        <%= form.submit 'POST', class: :question_button %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<%# 次はquestion-boxクラスのCSSの装飾から %>
